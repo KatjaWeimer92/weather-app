@@ -94,14 +94,16 @@ export default function SearchForm() {
     return (
         <form onSubmit={formik.handleSubmit}>
             {formik.errors.inputValue ? <div className={styles.errorContainer}>{formik.errors.inputValue}</div> : null}
-            <input
+            <div className={styles.inputContainer}>
+                <input 
                 type="string"
                 placeholder="input city for search"
                 value={formik.values.inputValue}
                 onChange={formik.handleChange}
                 name="inputValue"
             />
-            <MyButton type="submit" name="apply" />
+            <MyButton type="submit" name="Search" />
+            </div>
             <WeatherCard name={fetchData.name } weather={fetchData.weather} main={fetchData.main } />
         </form>
     )
