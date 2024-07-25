@@ -61,8 +61,8 @@ export default function WeatherCard({ name, weather, main }:IWeatherCardProps) {
                 </div>
                 <div className={styles.city}>{name}</div>
                 <div className={styles.buttonContainer}>
-                    <button>Save</button>
-                    <button>Delete</button>
+                    <button className={styles.save}>Save</button>
+                    <button className={styles.delete}>Delete</button>
                 </div>
             </div>
         </div>
