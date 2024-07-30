@@ -1,16 +1,25 @@
-import { Link } from "react-router-dom"
-import styles from "./header.module.css"
+import { Link, useLocation } from 'react-router-dom';
+import styles from './header.module.css';
+
+import { links } from './links';
 
 export default function Header() {
-    return (
-        <>
-            <header className={styles.header}>
-                <Link className={styles.naviWeatherApp} key='1' to='/'>Weather App</Link>
-                <div className={styles.naviHeader}>
-                <Link className={styles.naviHome} key='2' to='/'>Home</Link>
-                <Link className={styles.naviWeathers}  key='3' to='/'>Weathers</Link>    
-                </div>
-            </header>
-        </>
-    )
+  const location = useLocation();
+
+  return (
+    <header className={styles.header}>
+      <span>Weather App</span>
+      <div>
+        {links.map((el, index) => (
+          <Link
+            key={index}
+            className={location.pathname === el.pathname ? styles.active : ''}
+            to={el.pathname}>{el.title}</Link>
+        ))}
+
+      </div>
+
+    </header>
+  );
 }
+

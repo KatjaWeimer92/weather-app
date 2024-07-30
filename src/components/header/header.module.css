@@ -1,66 +1,24 @@
 .header {
-    width: 100%;
-    max-width: 1920px;
-    height: 80px;
-    padding: 10px;
-    gap: 10px;
-    border-bottom: 1px solid rgba(210, 210, 210, 1);
-    background: linear-gradient(0deg, rgba(18, 45, 77, 0.5), rgba(255, 255, 255, 0.1));
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(18, 45, 77, 0.5);
+  border: 1px #D2D2D2 solid;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 25px 85px;
 }
 
-.naviWeatherApp{
-width: 155px;
-height: 29px;
-top: 25.5px;
-left: 85px;
-font-family: 'Inter', sans-serif;
-font-size: 24px;
-font-weight: 700;
-line-height: 29.05px;
-text-align: left;
-color: rgba(255, 255, 255, 1);
-
-}
-
-.naviHome{
-    width: 56px;
-    height: 24px;
-    top: 28px;
-    left: 1624px;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.2px;
-    color: rgba(255, 255, 255, 1);
-}
-
-.naviWeathers{
-    width: 95px;
-    height: 24px;
-    top: 28px;
-    left: 1745px;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24.2px;
-    color: rgba(255, 255, 255, 1);
-    
-
-}
-
-.naviHeader{
-
-   display: flex;
-    gap: 65px;
-}
-
-.header a {
-    text-decoration: none;
-    
+header span {
+  color: white;
+  font-size: 24px;
 }
 
 
+.header a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}

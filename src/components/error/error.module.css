@@ -13,36 +13,17 @@
 }
 
 .card h2 {
-  margin: 0;
+  margin: 0 0 7px;
   font-weight: 500;
   font-size: 57px;
-  color: #fff;
+  text-align: center;
+  color: #f35e5e;
 }
 
-.card h5 {
+.card h3 {
   margin: 0;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
   color: #fff;
-}
-
-.weatherDataWrapper {
-  display: flex;
-  margin-bottom: 19px;
-}
-
-.img {
-  height: 90px;
-  width: 90px;
-}
-
-.imgSection {
-  display: flex;
-  justify-content: center;
-  flex: 1;
-}
-
-.buttonWrapper {
-  display: flex;
-  justify-content: space-evenly;
 }
